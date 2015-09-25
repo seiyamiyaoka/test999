@@ -1,0 +1,10 @@
+<h1>問い合わせ</h1>
+<%= form_for @contact,url:contacts_permit_path do |f| %>
+<p>名前</p>
+<%= f.text_field :name %>
+<p>タイトル</p>
+<%= f.text_field :email %>
+<p>内容</p>
+<%= f.text_field :content %>
+<%= f.submit "確認" %>
+<% end %>

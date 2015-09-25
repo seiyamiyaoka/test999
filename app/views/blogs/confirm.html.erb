@@ -1,0 +1,12 @@
+<h1>確認</h1>
+<h2>こちらの内容でよろしいですか？</h2>
+<%= form_for @blog,url:new_thanks_path do |f| %>
+<p>名前</p>
+<%= f.hidden_field :name %>
+
+<p>タイトル</p>
+<%= f.hidden_field :title %>
+<p>内容</p>
+<%= f.hidden_field :content %>
+<%= f.submit "送信" %>
+<% end %>

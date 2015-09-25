@@ -1,0 +1,17 @@
+<h1>新規作成</h1>
+
+<% if @blog.errors.any? %>
+<%= @blog.errors.count %>
+<%  @blog.errors.full_messages.each do |message| %>
+<%= message %>
+<% end %>
+<% end %>
+<%= form_for @blog,url:new_confirm_path do |f| %>
+<p>名前</p>
+<%= f.text_field :name %>
+<p>タイトル</p>
+<%= f.text_field :title %>
+<p>内容</p>
+<%= f.text_field :content %>
+<%= f.submit "確認" %>
+<% end %>

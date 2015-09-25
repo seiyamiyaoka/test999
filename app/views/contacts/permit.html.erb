@@ -1,0 +1,10 @@
+<h1>確認</h1>
+<%= form_for @contact,url:contacts_thanks_path do |f| %>
+<p>名前</p>
+<%= f.hidden_field :name %>
+<p>タイトル</p>
+<%= f.hidden_field :email %>
+<p>内容</p>
+<%= f.hidden_field :content %>
+<%= f.submit "送信" %>
+<% end %>

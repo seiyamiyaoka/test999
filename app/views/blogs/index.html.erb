@@ -1,0 +1,7 @@
+<h1>一覧</h1>
+<% @blogs.each do |blog| %>
+<%= blog.name %>
+<%= blog.title %>
+<%= blog.content %>
+<% end %>
+<%= link_to "ホーム",root_path %>
