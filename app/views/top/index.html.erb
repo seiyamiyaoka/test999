@@ -1,3 +1,14 @@
 <p>タイトル</p>
+
+<% if user_signed_in? %>
+<li><%= link_to "ログアウト",destroy_user_session_path, method: :delete %></li>
+<% else %>
+<li><%= link_to "ログイン",new_user_session_path %></li>
+<% end %>
+
+
+
+
+
 <%= link_to "一覧",blogs_path %>
 <%= link_to "新規",new_path %>
