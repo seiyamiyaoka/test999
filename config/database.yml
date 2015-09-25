@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
-  database: yasai_production
-  username: yasai
-  password: <%= ENV['YASAI_DATABASE_PASSWORD'] %>
+  database: d97f46su7ip84f
+  username: nfjivaliqzyjip
+  password: IiEOGMRrHpYiHliUqhPAGYPBoO
+  hostname:  ec2-54-227-254-13.compute-1.amazonaws.com:5432
