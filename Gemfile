@@ -44,3 +44,9 @@ group :development, :test do
 end
 
 gem 'devise'
+gem 'oauth'
+
+group :development do
+  # Twitter用のライブラリ
+  gem 'twitter'
+end
