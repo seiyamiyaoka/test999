@@ -43,10 +43,8 @@ group :development, :test do
   gem 'spring'
 end
 
-gem 'devise'
-gem 'oauth'
+gem 'therubyracer', platforms: :ruby
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
+  
 
-group :development do
-  # Twitter用のライブラリ
-  gem 'twitter'
-end

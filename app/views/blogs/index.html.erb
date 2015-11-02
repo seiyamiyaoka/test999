@@ -1,7 +1,19 @@
 <h1>一覧</h1>
 <% @blogs.each do |blog| %>
-<%= blog.name %>
-<%= blog.title %>
-<%= blog.content %>
+<div class="main-content">
+<table border>
+  <tr>
+    <th><%= blog.name %></th>
+  </tr>
+  <tr>
+    <td><%= blog.title %></td>
+  </tr>
+  <tr>
+    <td><%= blog.content %></td>
+  </tr>
+  </table>
+<div>
+
+
 <% end %>
 <%= link_to "ホーム",root_path %>
